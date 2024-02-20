@@ -15,3 +15,5 @@ router.register('diseases', DiseaseBannerView, basename='DiseaseBanner')
 router.register('how_to_use', HowToUseView, basename='HowToUse')
 router.register('number_facts', NumberFactView, basename='NumberFact')
 router.register('info', InfoView, basename='Info')
+router.register('logo', LogoView, basename='Logo')
+

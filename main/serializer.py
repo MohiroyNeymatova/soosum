@@ -61,3 +61,9 @@ class InfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Info
         fields = "__all__"
+
+
+class LogoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Info
+        fields = ['logo']

@@ -108,3 +108,14 @@ class InfoView(ReadOnlyModelViewSet):
         queryset = self.queryset.last()
         ser = self.serializer_class(queryset)
         return Response(ser.data)
+
+
+class LogoView(ReadOnlyModelViewSet):
+    queryset = Info.objects.all()
+    serializer_class = LogoSerializer
+    http_method_names = ['get']
+
+    def list(self, request):
+        queryset = self.queryset.last()
+        ser = self.serializer_class(queryset)
+        return Response(ser.data)
