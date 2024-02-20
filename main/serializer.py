@@ -66,4 +66,4 @@ class InfoSerializer(serializers.ModelSerializer):
 class LogoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Info
-        fields = ['logo']
+        fields = ['id', 'logo']
